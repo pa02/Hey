@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msg for u...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./sorry.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #ff7f7f;
+            background-color: rgba(255, 228, 225, 0.9);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #showMessageButton {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ff7f7f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        #showMessageButton:hover {
+            background-color: #ff4c4c;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="showMessageButton">Click here Geeta...</button>
+
+    <div id="message">
+        <p>I'm Sorry Geeta 😢😢</p>
+        <p>I heard you when you called me this morning, but I unintentionally ignored it. Sorry about that.🙏</p>
+    </div>
+
+    <script>
+        document.getElementById('showMessageButton').addEventListener('click', function () {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
